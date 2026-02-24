@@ -1,17 +1,41 @@
-# 📦 Amazon Delivery Time Predictor 🚚
+📦 Amazon Delivery Time Predictor 🚚
+This project utilizes Machine Learning to predict Amazon delivery times with high precision. By analyzing various factors such as courier performance, distance, weather conditions, and traffic density, the model provides accurate arrival estimates.
 
-Ушбу лойиҳа машинавий ўрганиш (Machine Learning) ёрдамида Amazon етказиб бериш вақтини башорат қилиш учун яратилган. Илова курьер маълумотлари, масофа, об-ҳаво ва тирбандлик каби омилларни ҳисобга олади.
+🚀 Key Features:
+Model Architecture: Optimized XGBoost Regressor for high-performance regression.
 
-### 🚀 Хусусиятлари:
-* **Model:** XGBoost Regressor
-* **Accuracy (R2 Score):** 0.7864
-* **MAE:** ~15.7 дақиқа
-* **Interface:** Streamlit
+Predictive Accuracy: Achieved an R2 Score of 0.7864.
 
-### 📊 Маълумотлар таҳлили (EDA):
-Лойиҳа давомида масофа ва вақт орасидаги корреляциялар таҳлил қилинди. Айниқса, тирбандлик ва курьер рейтинги етказиб бериш вақтига энг катта таъсир кўрсатувчи омиллар эканлиги аниқланди.
+Precision: Mean Absolute Error (MAE) of approximately 15.7 minutes.
 
-### 🛠 Ишлатиш бўйича йўриқнома:
-1. Репозиторийни кўчириб олинг.
-2. Керакли кутубхоналарни ўрнатинг: `pip install -r requirements.txt`
-3. Иловани ишга туширинг: `streamlit run app.py`
+Interactive Interface: User-friendly web application built with Streamlit.
+
+📊 Exploratory Data Analysis (EDA):
+A comprehensive analysis was conducted to understand the drivers of delivery efficiency:
+
+Correlation Analysis: Studied the relationship between distance and delivery duration.
+
+Key Drivers: Identified that Traffic Density and Courier Ratings are the most significant predictors of delivery speed.
+
+Data Visualization: Utilized Matplotlib and Seaborn to visualize patterns in supply chain logistics.
+
+🛠 Tech Stack:
+Languages: Python
+
+Libraries: Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn
+
+Deployment: Streamlit
+
+⚙️ Installation & Usage:
+Clone the repository:
+
+Bash
+git clone https://github.com/kosim23/amazon_delivery.git
+Install dependencies:
+
+Bash
+pip install -r requirements.txt
+Run the application:
+
+Bash
+streamlit run app.py
